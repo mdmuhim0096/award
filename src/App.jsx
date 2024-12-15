@@ -1,25 +1,23 @@
-import Header from "./sections/Header.jsx";
-import Hero from "./sections/Hero.jsx";
-import Features from "./sections/Features.jsx";
-import Pricing from "./sections/Pricing.jsx";
-import Faq from "./sections/Faq.jsx";
-import Testimonials from "./sections/Testimonials.jsx";
-import Download from "./sections/Download.jsx";
-import Footer from "./sections/Footer.jsx";
+import About from "./components/About";
+import Hero from "./components/Hero";
+import NavBar from "./components/Navbar";
+import Features from "./components/Features";
+import Story from "./components/Story";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-const App = () => {
+function App() {
   return (
-    <main className="overflow-hidden">
-      <Header />
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <NavBar />
       <Hero />
+      <About />
       <Features />
-      <Pricing />
-      <Faq />
-      <Testimonials />
-      <Download />
+      <Story />
+      <Contact />
       <Footer />
     </main>
   );
-};
+}
 
 export default App;
